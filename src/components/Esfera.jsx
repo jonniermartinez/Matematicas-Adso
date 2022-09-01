@@ -1,30 +1,33 @@
 import {React, useRef, useState} from "react"; 
 
-function Cubo(){
+
+function Esfera(){
     const [volumen, setVolumen] = useState(0);
 
-    const InputA = useRef(null);
-
+    const radio = useRef(null);
+    const pi = Math.PI;
 
     const calcular = () => {
-        const a = Number(InputA.current.value);
-        setVolumen(calcularVolumen(a)) 
+        const r = Number(radio.current.value);
+        setVolumen(calcularVolumen(r)) 
     }
-    const calcularVolumen = (a) =>{
-         const resultado = Math.pow(a, 3);
+    const calcularVolumen = (r) =>{
+         const resultado = 4/3 * pi * (r ** 3) ;
          return resultado;
     }
 
+
+
   return(
     <div className="blog">
-        <h1 className="blog__title">Soy un Cubo</h1>
-        <img className="blog__img" src="" alt="cuadrado" />
+        <h1 className="blog__title">Soy un Esfera</h1>
+        <img className="blog__img" src="" alt="Esfera" />
         <p className="blog__text"></p>
         <form className="form">
             <div className="inputs__container">
 
-                    <label>lado a</label>
-                    <input type="number" ref={InputA} />
+                    <label>Radio</label>
+                    <input type="number" ref={radio} />
 
             </div>
             <button onClick={calcular} type="button" className="button form__button">Calcular</button>
@@ -38,4 +41,4 @@ function Cubo(){
 
 }
 
-export default Cubo;
+export default Esfera;

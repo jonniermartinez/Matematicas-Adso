@@ -32,16 +32,16 @@ function Figuras(){
                     <Link to="../cubo" className="figura__link"><img className="figura__img" src="" alt="cubo" /></Link>
                 </div>
                 <div className="figura">
-                    <Link to="../cuadrado" className="figura__link"><img className="figura__img" src="" alt="cuadrado" /></Link>
+                    <Link to="../cilindro" className="figura__link"><img className="figura__img" src="" alt="cilindro" /></Link>
                 </div>
                 <div className="figura">
-                    <Link to="../cuadrado" className="figura__link"><img className="figura__img" src="" alt="cuadrado" /></Link>
+                    <Link to="../esfera" className="figura__link"><img className="figura__img" src="" alt="esfera" /></Link>
                 </div>
                 <div className="figura">
-                    <Link to="../cuadrado" className="figura__link"><img className="figura__img" src="" alt="cuadrado" /></Link>
+                    <Link to="../cono" className="figura__link"><img className="figura__img" src="" alt="cono" /></Link>
                 </div>
                 <div className="figura">
-                    <Link to="../cuadrado" className="figura__link"><img className="figura__img" src="" alt="cuadrado" /></Link>
+                    <Link to="../prisma" className="figura__link"><img className="figura__img" src="" alt="prisma" /></Link>
                 </div>
             </div>
         </div>
