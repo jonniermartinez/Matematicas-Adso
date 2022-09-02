@@ -105,6 +105,7 @@ a{
     margin-bottom: 5rem;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .figuras__container div{
     width: 100%;
@@ -217,4 +218,41 @@ a{
 .resultados p{
     margin-top: 2rem;
     font-size: 1.8rem;
+}
+@media (max-width:1000px) {
+    .header__content{
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .content__text{
+        margin: 0 auto 5rem auto;
+    }
+    .header__img{
+        width: 38rem;
+        align-self: center;
+    }
+    .content__title{
+        font-size: 4rem;
+    }
+    .blog{
+        width: 70%;
+        grid-template-areas: 
+        "a a"
+        "f f"
+        "form form"
+        "b b"
+        ;
+    }
+    .blog__img{
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width:425px){
+    body{
+        padding: .5rem;
+    }
+    .nav__list{
+        display: none;
+    }
 }
