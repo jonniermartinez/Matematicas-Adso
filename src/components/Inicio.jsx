@@ -1,6 +1,6 @@
-import React from "react";
-import math from '../assets/fondo.webp'
+import {React} from "react";
 import { Link } from "react-router-dom";
+import images from "../assets/images";
 
 function Inicio(){
   return(
@@ -10,7 +10,7 @@ function Inicio(){
             <p className="content__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, in dicta sequi omnis iure expedita?</p>
             <Link to="figuras" className="button content__button">Ver figuras</Link>
         </div>
-        <img src={math} className='header__img' alt="Fodo de matematicas" />
+        <img src={images.fondo} className='header__img' alt="Fodo de matematicas" />
     </div>
   )
 
