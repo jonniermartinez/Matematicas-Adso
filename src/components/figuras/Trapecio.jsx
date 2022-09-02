@@ -1,4 +1,5 @@
 import {React, useRef, useState} from "react"; 
+import images from "../../assets/images";
 // https://matematicasparaticharito.wordpress.com/tag/perimetro-y-area-del-trapecio/
 function Trapecio(){
     const [area, setArea] = useState(0);
@@ -31,7 +32,7 @@ function Trapecio(){
   return(
     <div className="blog">
         <h1 className="blog__title">Trapecio isósceles</h1>
-        <img className="blog__img" src="" alt="Trapecio" />
+        <img className="blog__img" src={images.trapecio} alt="Trapecio" />
         <p className="blog__text"></p>
         <form className="form">
             <div className="inputs__container">

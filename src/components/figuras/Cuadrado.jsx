@@ -1,5 +1,5 @@
 import {React, useRef, useState} from "react"; 
-
+import images from "../../assets/images"
 
 function Cuadrado(){
     const [area, setArea] = useState(0);
@@ -26,8 +26,8 @@ function Cuadrado(){
 
   return(
     <div className="blog">
-        <h1 className="blog__title">Soy un cuadrado</h1>
-        <img className="blog__img" src="" alt="cuadrado" />
+        <h1 className="blog__title">Cuadrado</h1>
+        <img className="blog__img" src={images.cuadrado} alt="cuadrado" />
         <p className="blog__text"></p>
         <form className="form">
             <div className="inputs__container">

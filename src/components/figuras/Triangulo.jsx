@@ -1,4 +1,5 @@
 import {React, useRef, useState} from "react"; 
+import images from "../../assets/images";
 
 function Triangulo(){
     const [area, setArea] = useState(0);
@@ -26,7 +27,7 @@ function Triangulo(){
   return(
     <div className="blog">
         <h1 className="blog__title">Triangulo Equilatero</h1>
-        <img className="blog__img" src="" alt="Triangulo" />
+        <img className="blog__img" src={images.triangulo} alt="Triangulo" />
         <p className="blog__text"></p>
         <form className="form">
             <div className="inputs__container">

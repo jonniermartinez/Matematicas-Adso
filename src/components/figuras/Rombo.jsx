@@ -1,4 +1,5 @@
 import {React, useRef, useState} from "react"; 
+import images from "../../assets/images";
 // https://yosoytuprofe.20minutos.es/2020/04/08/area-y-perimetro-de-un-rombo/
 function Rombo(){
     const [area, setArea] = useState(0);
@@ -27,9 +28,9 @@ function Rombo(){
 
   return(
     <div className="blog">
-        <h1 className="blog__title">Soy un Rombo</h1>
-        <img className="blog__img" src="" alt="Rombo" />
-        <p className="blog__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt autem dolore illo nulla laudantium minima.</p>
+        <h1 className="blog__title">Rombo</h1>
+        <img className="blog__img" src={images.rombo} alt="Rombo" />
+        <p className="blog__text"></p>
         <form className="form">
             <div className="inputs__container">
                 <div>

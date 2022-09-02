@@ -1,4 +1,5 @@
 import {React, useRef, useState} from "react"; 
+import images from "../../assets/images";
 // https://yosoytuprofe.20minutos.es/2020/04/16/volumen-de-un-prisma/
 
 function Prisma(){
@@ -24,8 +25,8 @@ function Prisma(){
 
   return(
     <div className="blog">
-        <h1 className="blog__title">Soy un Prisma</h1>
-        <img className="blog__img" src="" alt="Prisma" />
+        <h1 className="blog__title">Prisma</h1>
+        <img className="blog__img" src={images.prisma} alt="Prisma" />
         <p className="blog__text"></p>
         <form className="form">
             <div className="inputs__container">

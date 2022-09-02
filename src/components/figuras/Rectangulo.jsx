@@ -1,4 +1,5 @@
 import {React, useRef, useState} from "react"; 
+import images from "../../assets/images";
 
 function Rectangulo(){
     const [area, setArea] = useState(0);
@@ -26,8 +27,8 @@ function Rectangulo(){
 
   return(
     <div className="blog">
-        <h1 className="blog__title">Soy un Rectangulo</h1>
-        <img className="blog__img" src="" alt="Rectangulo" />
+        <h1 className="blog__title">Rectangulo</h1>
+        <img className="blog__img" src={images.rectangulo} alt="Rectangulo" />
         <p className="blog__text"></p>
         <form className="form">
             <div className="inputs__container">

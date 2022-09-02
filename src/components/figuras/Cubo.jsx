@@ -1,4 +1,5 @@
 import {React, useRef, useState} from "react"; 
+import images from "../../assets/images";
 
 function Cubo(){
     const [volumen, setVolumen] = useState(0);
@@ -17,8 +18,8 @@ function Cubo(){
 
   return(
     <div className="blog">
-        <h1 className="blog__title">Soy un Cubo</h1>
-        <img className="blog__img" src="" alt="cuadrado" />
+        <h1 className="blog__title">Cubo</h1>
+        <img className="blog__img" src={images.cubo} alt="cuadrado" />
         <p className="blog__text"></p>
         <form className="form">
             <div className="inputs__container">

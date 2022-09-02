@@ -1,7 +1,8 @@
 import {React, useRef, useState} from "react"; 
+import images from "../../assets/images"
 
 
-function Cilindro(){
+function Cono(){
     const [volumen, setVolumen] = useState(0);
 
     const altura = useRef(null);
@@ -15,15 +16,16 @@ function Cilindro(){
         setVolumen(calcularVolumen(h, r)) 
     }
     const calcularVolumen = (h, r) =>{
-         const resultado = (pi * r ** 2) * h;
+         const resultado = (pi * (r ** 2) * h)/3;
          return resultado;
     }
 
 
+
   return(
     <div className="blog">
-        <h1 className="blog__title">Soy un Cilindro</h1>
-        <img className="blog__img" src="" alt="Cilindro" />
+        <h1 className="blog__title">Cono</h1>
+        <img className="blog__img" src={images.cono} alt="Cono" />
         <p className="blog__text"></p>
         <form className="form">
             <div className="inputs__container">
@@ -35,7 +37,6 @@ function Cilindro(){
                     <label>Radio</label>
                     <input type="number" ref={radio} />
                 </div>
-
             </div>
             <button onClick={calcular} type="button" className="button form__button">Calcular</button>
         </form>
@@ -48,4 +49,4 @@ function Cilindro(){
 
 }
 
-export default Cilindro;
+export default Cono;
