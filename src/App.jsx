@@ -1,22 +1,22 @@
+import react from 'react'
 import { Routes, Route, Link } from "react-router-dom";
-import Inicio from './components/layaut/Inicio';
-import Figuras from './components/layaut/Figuras';
-import SolidoIrregular from './components/figuras/solido-irregular';
+import Inicio from './components/Inicio';
+import Figuras from './components/Figuras';
+import SolidoIrregular from './components/solido-irregular';
 import './App.css';
-import Navegacion from './components/layaut/navegacion'
-import Cuadrado from './components/figuras/Cuadrado';
-import Rectangulo from './components/figuras/Rectangulo';
-import Trapecio from './components/figuras/Trapecio';
-import Triangulo from './components/figuras/Triangulo';
-import Rombo from './components/figuras/Rombo';
-import Cubo from './components/figuras/Cubo';
-import Cono from './components/figuras/Cono';
-import Esfera from './components/figuras/Esfera';
-import Cilindro from './components/figuras/Cilindro'
-import Prisma from './components/figuras/Prisma'
+import Navegacion from './components/navegacion.jsx'
+import Cuadrado from './components/Cuadrado';
+import Rectangulo from './components/Rectangulo';
+import Trapecio from './components/Trapecio';
+import Triangulo from './components/Triangulo';
+import Rombo from './components/Rombo';
+import Cubo from './components/Cubo';
+import Cono from './components/Cono';
+import Esfera from './components/Esfera';
+import Cilindro from './components/Cilindro'
+import Prisma from './components/Prisma'
 
 function App() {
-
   return (
     <div className="App">
         <Navegacion></Navegacion>
@@ -36,6 +36,7 @@ function App() {
             <Route path='prisma' element={<Prisma />} />
           </Routes>
           <footer className="footer">Jonnier Martinez</footer>
+
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import {React, useRef, useState} from "react"; 
-import images from "../../assets/images";
+import images from "../assets/images";
+
 
 function Rectangulo(){
     const [area, setArea] = useState(0);

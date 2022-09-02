@@ -1,5 +1,5 @@
 import {React, useRef, useState} from "react"; 
-import images from "../../assets/images";
+import images from "../assets/images";
 // https://yosoytuprofe.20minutos.es/2020/04/16/volumen-de-un-prisma/
 
 function Prisma(){

@@ -1,5 +1,5 @@
 import {React, useRef, useState} from "react"; 
-import images from "../../assets/images";
+import images from "../assets/images";
 
 function Triangulo(){
     const [area, setArea] = useState(0);

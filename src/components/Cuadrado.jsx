@@ -1,5 +1,5 @@
-import {React, useRef, useState} from "react"; 
-import images from "../../assets/images"
+import {React, useRef, useState} from "react";
+import images from "../assets/images"
 
 function Cuadrado(){
     const [area, setArea] = useState(0);
@@ -8,8 +8,9 @@ function Cuadrado(){
     const aInput = useRef(null);
 
 
-    const calcular = () => {
-        setArea(calcularArea()) 
+    const handleClick = () => {
+        console.log("Me clicaste")
+        setArea(calcularArea())
         setPerimetro(calcularPerimetro())
     }
     const calcularArea = () =>{
@@ -29,21 +30,21 @@ function Cuadrado(){
         <h1 className="blog__title">Cuadrado</h1>
         <img className="blog__img" src={images.cuadrado} alt="cuadrado" />
         <p className="blog__text"></p>
-        <form className="form">
+        <div className="form">
             <div className="inputs__container">
 
                     <label>lado a</label>
                     <input type="number" ref={aInput}/>
 
             </div>
-            <button onClick={calcular} type="button" className="button form__button">Calcular</button>
-        </form>
+            <button onClick={handleClick} className="button form__button">Calcular</button>
+        </div>
         <div className="resultados">
                 <h3>Resultados</h3>
                 <p>Area: {area}</p>
                 <p>Perimetro: {perimetro}</p>
         </div>
-    </div>  
+    </div>
   )
 
 }

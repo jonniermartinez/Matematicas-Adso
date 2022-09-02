@@ -1,5 +1,5 @@
 import {React, useRef, useState} from "react"; 
-import images from "../../assets/images";
+import images from "../assets/images";
 // https://matematicasparaticharito.wordpress.com/tag/perimetro-y-area-del-trapecio/
 function Trapecio(){
     const [area, setArea] = useState(0);

@@ -1,34 +1,40 @@
 import {React, useRef, useState} from "react"; 
-import images from "../../assets/images";
+import images from "../assets/images"
 
-
-function Esfera(){
+function Cilindro(){
     const [volumen, setVolumen] = useState(0);
 
+    const altura = useRef(null);
     const radio = useRef(null);
     const pi = Math.PI;
 
+
     const calcular = () => {
+        const h = Number(altura.current.value);
         const r = Number(radio.current.value);
-        setVolumen(calcularVolumen(r)) 
+        setVolumen(calcularVolumen(h, r)) 
     }
-    const calcularVolumen = (r) =>{
-         const resultado = 4/3 * pi * (r ** 3) ;
+    const calcularVolumen = (h, r) =>{
+         const resultado = (pi * r ** 2) * h;
          return resultado;
     }
 
 
-
   return(
     <div className="blog">
-        <h1 className="blog__title">Esfera</h1>
-        <img className="blog__img" src={images.esfera} alt="Esfera" />
+        <h1 className="blog__title">Cilindro</h1>
+        <img className="blog__img" src={images.cilindro} alt="Cilindro" />
         <p className="blog__text"></p>
         <form className="form">
             <div className="inputs__container">
-
+                <div>
+                    <label>Altura</label>
+                    <input type="number" ref={altura} />
+                </div>
+                <div>
                     <label>Radio</label>
                     <input type="number" ref={radio} />
+                </div>
 
             </div>
             <button onClick={calcular} type="button" className="button form__button">Calcular</button>
@@ -42,4 +48,4 @@ function Esfera(){
 
 }
 
-export default Esfera;
+export default Cilindro;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom"; 
-import images from "../../assets/images";
+import images from "../assets/images";
 
 
 function Figuras(){

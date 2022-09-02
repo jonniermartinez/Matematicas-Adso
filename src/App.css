@@ -69,7 +69,6 @@ a{
     border-radius: 1rem;
     color: var(--color-white);
     font-weight: bold;
-    cursor: pointer;
 }
 .header{
     height: auto;
@@ -168,6 +167,8 @@ a{
 
 .form{
     grid-area: form;
+    position: relative;
+    z-index: 1;
 }
 .inputs__container{
     display: grid;
@@ -196,6 +197,8 @@ a{
 .form__button{
     max-width: 20rem;
     font-size: 1.8rem;
+    position: relative;
+    z-index: 2;
 }
 .resultados{
     grid-area: b;

@@ -1,5 +1,5 @@
 import {React, useRef, useState} from "react"; 
-import images from "../../assets/images";
+import images from "../assets/images";
 
 function Cubo(){
     const [volumen, setVolumen] = useState(0);
