@@ -10,6 +10,7 @@ import cono from './7.png'
 import esfera from './8.png'
 import cilindro from './9.png'
 import prisma from './10.png'
+import roca from './roca.jpg'
 
 export default {
     'mathHome': mathHome,
@@ -24,4 +25,5 @@ export default {
     'esfera': esfera,
     'cilindro': cilindro,
     'prisma': prisma,
+    'roca': roca
 }

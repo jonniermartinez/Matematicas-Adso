@@ -9,12 +9,14 @@
     box-sizing: border-box;
 }
 html{
+    height: 100%;
     font-family: 'Roboto';
     font-size: 62.5%;
 }
 body{
     height: 100%;
     padding: 0 7rem;
+
 }
 ul{
     list-style: none;
@@ -55,7 +57,6 @@ a{
     border-radius: 50%;
 }
 .footer{
-    margin-top: 15.5rem;
     background-color: var(--color-black);
     color: var(--color-white);
     font-size: 2rem;
@@ -71,6 +72,7 @@ a{
     font-weight: bold;
 }
 .header{
+    margin-bottom: 15.5rem;
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -100,6 +102,7 @@ a{
 }
 .figuras__container{
     margin-top: 3rem;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: space-around;
 }
@@ -131,6 +134,8 @@ a{
     border-radius: 1rem;
 }
 .blog{
+    margin: 0 auto;
+    margin-bottom: 12.7rem;
     width: 55%;
     display: grid;
     grid-template-areas: 
@@ -140,7 +145,6 @@ a{
     "f b"
     ;
     grid-template-columns: 50% 2fr;
-    margin: 0 auto;
     text-align: center;
 }
 .blog__title{
@@ -162,7 +166,10 @@ a{
     grid-area: form;
     font-size: 1.8rem;
     opacity: .8;
+    margin-left: 3rem;
     text-align: justify;
+    word-spacing: 2px;
+    line-height: 2.3rem;
 }
 
 .form{
